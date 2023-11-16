@@ -1,12 +1,10 @@
 mod bracket;
 mod command;
-mod inline;
 mod macros;
 mod semantic;
 
 pub use bracket::*;
 pub use command::*;
-pub use inline::*;
 pub use macros::*;
 pub use semantic::*;
 use syntax_kind::SyntaxNode;
@@ -23,5 +21,5 @@ pub enum SpanKind {
     Bracket(BracketSpan),
     Macro(MacroSpan),
     Command(CommandSpan),
-    Inline(InlineSpan),
+    Inline,
 }

@@ -96,6 +96,10 @@ dependencies = [
 [[package]]
 name = "parse"
 version = "0.1.0"
+dependencies = [
+ "rowan",
+ "syntax-kind",
+]
 
 [[package]]
 name = "rowan"

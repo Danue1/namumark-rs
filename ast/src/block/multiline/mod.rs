@@ -1,11 +1,9 @@
 mod block_quote;
-mod horizontal_rule;
 mod indent;
 mod list;
 
 use crate::Paragraph;
 pub use block_quote::*;
-pub use horizontal_rule::*;
 pub use indent::*;
 pub use list::*;
 use syntax_kind::SyntaxNode;
@@ -18,9 +16,9 @@ pub struct MultilineBlock {
 
 #[derive(Debug)]
 pub enum MultilineBlockKind {
-    HorizontalRule(HorizontalRuleBlock),
+    HorizontalRule,
     BlockQuote(BlockQuoteBlock),
     Indent(IndentBlock),
-    Paragraph(Paragraph),
     List(ListBlock),
+    Paragraph(Paragraph),
 }

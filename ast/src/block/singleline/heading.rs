@@ -4,6 +4,7 @@ use syntax_kind::SyntaxNode;
 #[derive(Debug)]
 pub struct HeadingBlock {
     pub level: HeadingLevel,
+    pub folding: bool,
     pub paragraph: Paragraph,
     pub node: SyntaxNode,
 }
