@@ -1,0 +1,10 @@
+---
+source: lex/src/lib.rs
+expression: tokens
+---
+[
+    (
+        TEXT,
+        "가나다라마바사아자차카타파하",
+    ),
+]

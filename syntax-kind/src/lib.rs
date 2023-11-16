@@ -4,9 +4,6 @@ pub type SyntaxNode = rowan::SyntaxNode<SyntaxKind>;
 #[allow(non_camel_case_types)]
 #[repr(u16)]
 pub enum SyntaxKind {
-    EOF,
-    UNKNOWN,
-
     // for Tokens
 
     // punctuation
@@ -44,6 +41,7 @@ pub enum SyntaxKind {
     BACKTICK,      // `
     WHITESPACE,    // ' '
     TAB,           // \t
+    NEW_LINE,      // \n
 
     // literal
     NUMERIC, // /[0-9]+/

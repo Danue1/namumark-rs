@@ -1,0 +1,10 @@
+---
+source: lex/src/lib.rs
+expression: tokens
+---
+[
+    (
+        TEXT,
+        "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    ),
+]
