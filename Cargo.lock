@@ -97,6 +97,8 @@ dependencies = [
 name = "parse"
 version = "0.1.0"
 dependencies = [
+ "insta",
+ "lex",
  "rowan",
  "syntax-kind",
 ]

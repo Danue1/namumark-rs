@@ -1,0 +1,16 @@
+---
+source: parse/src/ast/block/singleline/comment.rs
+assertion_line: 35
+expression: node
+---
+AST_NODE@0..11
+  BLOCK_NODE@0..11
+    SINGLELINE_BLOCK_NODE@0..11
+      COMMENT_BLOCK_NODE@0..11
+        HASH@0..1 "#"
+        HASH@1..2 "#"
+        HASH@2..3 "#"
+        WHITESPACE@3..4 " "
+        TEXT_NODE@4..11
+          TEXT@4..11 "comment"
+
